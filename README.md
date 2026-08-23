@@ -6,8 +6,13 @@
 
 ```bash
 brew tap kawabata324/gitbell
+brew trust kawabata324/gitbell
 brew install --cask gitbell
 ```
+
+`brew trust` が要るのは Homebrew 6 からで、他人の tap にある cask を読む前に
+明示的な信頼を求めるようになったため。これが無いと
+`Refusing to load cask ... from untrusted tap` で止まる。
 
 Apple Developer ID による署名がまだ無いので、インストール後に quarantine
 属性を外す必要がある（手順は cask の caveats に出る）。
