@@ -1,14 +1,14 @@
 cask "gitbell" do
-  version "0.1.0"
+  version "0.1.1"
 
   on_arm do
-    sha256 "4a4195ae729a004d9788b4efc27c031dd9a9138bfbf1928cbdd907cff3e4d287"
+    sha256 "c7da91cda7c71940e95d410d952b669d7db2455532911c3c18e4aa2f127e0180"
 
     url "https://github.com/kawabata324/gitbell/releases/download/v#{version}/GitBell-#{version}-arm64.dmg",
         verified: "github.com/kawabata324/gitbell/"
   end
   on_intel do
-    sha256 "d68137620db5d54b24fb1611c58f4dc1f1a0b83e4ede815314d862e249388ee4"
+    sha256 "5542c859177d2d3c8ccb612603307227baafc8e7f5b1448ca50adf0c8d12014d"
 
     url "https://github.com/kawabata324/gitbell/releases/download/v#{version}/GitBell-#{version}.dmg",
         verified: "github.com/kawabata324/gitbell/"
